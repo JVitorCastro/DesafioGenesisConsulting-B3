@@ -1,43 +1,35 @@
-🧪 Desafio Técnico – Genesis Consulting & B3
+# 🚀 Desafio Técnico – Genesis Consulting & B3
 
-Este repositório contém o código desenvolvido como parte de um desafio técnico proposto pela Genesis Consulting em parceria com a B3.
+Este repositório contém o código desenvolvido como parte de um **desafio técnico proposto pela Genesis Consulting em parceria com a B3**.
 
-O objetivo do projeto é a automação de testes em duas plataformas distintas, utilizando C# com Playwright.
+O projeto tem como objetivo demonstrar conhecimentos em **automação de testes**, utilizando **C# com Playwright**.
 
-🌐 Plataformas Testadas
+---
 
-Os testes automatizados contemplam as seguintes aplicações:
+## 🧪 Escopo do Projeto
 
-Correios
+Foram automatizados testes em duas plataformas distintas:
 
-Parodify
+- 📦 **Correios**
+- 🎵 **Parodify**
 
-⚠️ Observação Importante sobre o Site dos Correios
+Cada plataforma possui particularidades que foram consideradas durante o desenvolvimento dos testes.
 
-O site dos Correios possui um CAPTCHA, o que impede a automação completa do fluxo.
+---
 
-Por esse motivo, o teste foi projetado para exigir interação humana nesse ponto específico.
+## ⚠️ Atenção: CAPTCHA no site dos Correios
 
-🧩 Funcionamento do CAPTCHA no teste
+O site dos **Correios** utiliza **CAPTCHA**, o que impede a automação completa do fluxo de testes.
 
-Ao chegar na etapa do CAPTCHA, o teste:
+Por esse motivo, foi adotada uma abordagem **semi-automatizada**, exigindo **interação humana** nesse ponto específico.
 
-Aguarda o usuário iniciar a digitação no campo do CAPTCHA
+### 🔍 Como o teste lida com o CAPTCHA
 
-Após detectar a digitação, inicia uma contagem de 15 segundos
+- O teste aguarda o usuário **iniciar a digitação** no campo do CAPTCHA
+- Ao detectar a digitação, inicia-se uma **contagem regressiva de 15 segundos**
+- Durante esse período:
+  - ⏳ O teste permanece pausado
+  - ✍️ O usuário deve concluir o preenchimento do CAPTCHA
+- Após o término do tempo, o fluxo automatizado é retomado automaticamente
 
-Esse tempo é destinado para que o usuário conclua o preenchimento do CAPTCHA
-
-Enquanto a contagem não finalizar, o teste permanece pausado
-
-Após os 15 segundos, o fluxo automatizado é retomado automaticamente
-
-ℹ️ Essa abordagem garante que o teste possa prosseguir sem violar as restrições impostas pelo CAPTCHA.
-
-📌 Observações Finais
-
-O projeto foi desenvolvido exclusivamente para fins de avaliação técnica
-
-O uso de interação humana no CAPTCHA é intencional e necessário
-
-Não há qualquer tentativa de burlar mecanismos de segurança das aplicações testadas
+> ℹ️ Essa solução respeita as restrições de segurança do site e permite a continuidade do teste.
