@@ -97,25 +97,25 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("eu pesquisar o CEP \"80700000\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 7
- testRunner.Then("devo ver a mensagem de CEP inexistente", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("devo ver a mensagem de \"Dados não encontrado\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 9
- testRunner.When("eu voltar para a página inicial dos Correios", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("eu voltar para a página de busca de CEP dos Correios", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 10
  testRunner.And("eu pesquisar o CEP \"01013-001\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 11
- testRunner.Then("devo ver o endereço \"Rua Quinze de Novembro, São Paulo/SP\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("devo ver o endereço Rua Quinze de Novembro, São Paulo/SP", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 13
- testRunner.When("eu voltar para a página inicial dos Correios", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("eu voltar para a página de busca de CEP dos Correios", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 14
  testRunner.And("eu pesquisar o código de rastreamento \"SS987654321BR\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 15
- testRunner.Then("devo ver a mensagem de código inválido", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("devo ver a mensagem de \"Dados não encontrado\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

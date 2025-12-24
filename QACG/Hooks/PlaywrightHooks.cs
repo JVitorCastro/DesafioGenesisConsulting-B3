@@ -23,7 +23,7 @@ namespace QACG.StepDefinitions
             _playwright = await Playwright.CreateAsync();
             _browser = await _playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
             {
-                Headless = true
+                Headless = false
             });
         }
 
